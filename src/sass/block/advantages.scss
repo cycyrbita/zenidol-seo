@@ -1,0 +1,134 @@
+
+.advantages__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+
+    mark {
+        display: block;
+        font-size: 96px;
+        color: inherit;
+        letter-spacing: 22px;
+    }
+}
+
+.advantages__body {
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.advantages__info {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.advantages__media {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.advantages__item {
+    position: relative;
+    padding-left: 120px;
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+
+    & + & {
+        margin-top: 15px;
+    }
+
+    p {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 72px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.advantages__media {
+    padding-left: 70px;
+}
+
+@media (max-width: 1024px) {
+    .advantages__title {
+        font-size: 38px;
+
+        mark {
+            font-size: 66px;
+        }
+    }
+
+    .advantages__body {
+        margin-top: -50px;
+    }
+
+    .advantages__item {
+        min-height: 50px;
+        padding-left: 75px;
+
+        span {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages__body {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .advantages__info {
+        width: 100%;
+    }
+
+    .advantages__media {
+        width: 100%;
+        padding-left: 0;
+        max-width: 320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantages__title {
+        font-size: 30px;
+        text-align: center;
+
+        mark {
+            font-size: 50px;
+            letter-spacing: 0;
+        }
+    }
+
+    .advantages__item {
+        padding-left: 65px;
+
+        p {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 40px;
+        }
+    }
+}

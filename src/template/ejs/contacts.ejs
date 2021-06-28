@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('block/head') %>
+
+<body>
+    <div class="page">
+        <%- include('block/header') %>
+        <section class="section section_contacts">
+            <div class="container">
+                <div class="contacts">
+                    <div class="contacts__media"><img src="../media/contacts/human.png" alt=""></div>
+                    <div class="contacts__title">контакты</div>
+                    <div class="contacts__subtitle">ЗАКАЗЫ ПРИНИМАЮТСЯ ТОЛЬКО ПО ТЕЛЕФОНУ ПОСЛЕ ЗАПОЛНЕНИЯ ФОРМЫ НА СТРАНИЦЕ «ЗАКАЗАТЬ»!</div>
+                    <div class="contacts__description">Если у вас есть вопросы, отзывы и предложения, заполните форму ниже</div>
+                    <div class="table__btn">Заказать сейчас</div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_form">
+            <div class="container">
+                <div class="form">
+                    <div class="form__body">
+                        <label class="form__label form__label_textarea">
+                            <textarea class="form__field form__field_textarea" placeholder="Текст письма:"></textarea>
+                        </label>
+                        <label class="form__label">
+                            <input type="text" class="form__field" placeholder="Имя">
+                        </label>
+                        <label class="form__label">
+                            <input type="text" class="form__field" placeholder="Телефон">
+                        </label>
+                        <button class="form__btn">Отправить</button>
+                    </div>
+                    <div class="form__footer">
+                        <div class="form__info">Если у вас остались вопросы по доставке, звоните по номеру:</div>
+                        <div class="form__soc">
+                            <div class="form__soc-item">+525585262026</div>
+                            <div class="form__soc-item">ххххххххх@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('block/footer') %>
+    </div>
+    <%- include('block/script') %>
+</body>
+
+</html>

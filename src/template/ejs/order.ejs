@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('block/head') %>
+
+<body>
+    <div class="page">
+        <%- include('block/header') %>
+        <section class="section section_order">
+            <div class="container">
+                <form class="order">
+                    <div class="order__media"><img src="../media/product.png" alt=""></div>
+                    <h2 class="order__title"><mark>заказать</mark> wormin</h2>
+                    <div class="order__price">Цена: <mark>$34.900</mark></div>
+                    <label class="order__label">
+                        <p>Имя</p>
+                        <input type="text" class="order__field">
+                    </label>
+                    <label class="order__label">
+                        <p>Телефон</p>
+                        <input type="text" class="order__field">
+                    </label>
+                    <label class="order__label">
+                        <p>Почта</p>
+                        <input type="text" class="order__field">
+                    </label>
+                    <button class="order__btn" type="submit">Заказать сейчас</button>
+                </form>
+            </div>
+        </section>
+        <%- include('block/footer') %>
+    </div>
+    <%- include('block/script') %>
+</body>
+
+</html>
