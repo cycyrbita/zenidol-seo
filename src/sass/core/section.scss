@@ -6,7 +6,10 @@
     background-repeat: no-repeat;
 
     &_face {
-        background-color: #F2F2E8;
+        background-color: #D4F9E6;
+        background-image: url("../media/section/face.jpg");
+        background-position: center bottom;
+        background-position: center calc(100% + 70px);
     }
 
     &_sostav {
@@ -99,6 +102,10 @@
         padding-top: 30px;
         padding-bottom: 30px;
 
+        &_face {
+            background-position: center calc(100% - 130px);
+        }
+
         &_sostav {
             padding-bottom: 390px;
             background-image: url("../media/section/sostav-768.jpg");
@@ -118,6 +125,10 @@
 
 @media (max-width: 480px) {
     .section {
+        &_face {
+            background-position: center calc(100% - 30px);
+        }
+
         &_courier {
             padding-bottom: 300px;
             background-position: center bottom;
