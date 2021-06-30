@@ -1,4 +1,9 @@
 
+.form__title {
+    color: #000;
+    margin-bottom: 60px;
+}
+
 .form__body {
     margin-bottom: 20px;
     overflow: hidden;
@@ -141,5 +146,9 @@
 
     .form__info {
         font-size: 18px;
+    }
+
+    .form__title {
+        margin-bottom: 30px;
     }
 }

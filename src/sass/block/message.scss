@@ -1,13 +1,5 @@
 .message__title {
     margin-bottom: 30px;
-    text-align: center;
-    font-size: 64px;
-    color: #7E983C;
-    font-weight: 600;
-
-    & span {
-        display: block;
-    }
 }
 
 .message__title span {
@@ -205,12 +197,6 @@
 
     .message__title {
         margin-bottom: 15px;
-        font-size: 36px;
-        text-align: center;
-
-        & span {
-            display: inline;
-        }
     }
 
     .message__face {
