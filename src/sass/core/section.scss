@@ -26,7 +26,10 @@
     }
 
     &_order {
-        background-color: #F2F2E8;
+        background-image: url("../media/section/order.jpg");
+        background-repeat: repeat;
+        background-color: #d4f9e6;
+        overflow: hidden;
     }
 
     &_pay {
