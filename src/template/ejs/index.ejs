@@ -9,7 +9,7 @@
         <section class="section section_sostav">
             <div class="container">
                 <div class="sostav">
-                    <div class="sostav__title section__title"><h1>Состав</h1></div>
+                    <div class="sostav__title section__title">Состав <mark></mark></div>
                     <div class="sostav__body">
                         <div class="sostav__item">
                             <div class="sostav__box">
@@ -45,15 +45,19 @@
             </div>
         </section>
         <section class="section section_advantages">
-            <div class="container">
-                <div class="advantages">
-                    <h2 class="advantages__title">преимущества <mark>Zenidol</mark></h2>
+            <div class="advantages">
+                <div class="advantages__head">
+                    <div class="container">
+                        <h2 class="advantages__title section__title"><span>Преимущества</span> zenidol <mark></mark></h2>
+                    </div>
+                </div>
+                <div class="container">
                     <div class="advantages__body">
                         <div class="advantages__info">
                             <div class="advantages__list">
-                                <div class="advantages__item"><p><span>-1.</span> Способствует очищению организма</p></div>
-                                <div class="advantages__item"><p><span>-2.</span> Благоприятно влияет на работу ЖКТ</p></div>
-                                <div class="advantages__item"><p><span>-3.</span> Помогает избавиться от вредоносных микроорганизмов</p></div>
+                                <div class="advantages__item"><p>Помогает уменьшить неприятные проявления грибковой инфекции</p></div>
+                                <div class="advantages__item"><p>Способствует нормальной работе потовых желез</p></div>
+                                <div class="advantages__item"><p>Помогает создать защитный барьер, предотвращающий повторение инфекции</p></div>
                             </div>
                         </div>
                         <div class="advantages__media"><img src="../media/product.png" alt=""></div>
@@ -61,7 +65,26 @@
                 </div>
             </div>
         </section>
-        <%- include('block/face') %>
+        <section class="section section_face section_pb">
+            <div class="container">
+                <div class="face">
+                    <h1 class="face__title">zenidol <mark>помогает в борьбе с грибком</mark></h1>
+                    <div class="face__price">Цена: 999</div>
+                    <div class="face__btn"><a class="btn" href="">Заказать сейчас</a></div>
+                    <div class="face__media"><img src="../media/product.png" alt=""></div>
+                    <div class="face__body">
+                        <div class="face__row">
+                            <div class="face__item">Помогает снять зуд и шелушение кожи</div>
+                            <div class="face__item">Способствует устранению симптомов грибка</div>
+                        </div>
+                        <div class="face__row">
+                            <div class="face__item">Помогает устранить неприятный запах</div>
+                            <div class="face__item">Помогает снять раздражение кожи</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <%- include('block/footer') %>
     </div>
     <%- include('block/script') %>

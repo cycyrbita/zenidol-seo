@@ -10,6 +10,10 @@
         background-image: url("../media/section/face.jpg");
         background-position: center bottom;
         background-position: center calc(100% + 70px);
+
+        &.section_pb {
+            padding-bottom: 180px;
+        }
     }
 
     &_sostav {
@@ -17,8 +21,8 @@
     }
 
     &_advantages {
-        background-image: url("../media/section/advantages.jpg");
-        background-repeat: repeat;
+        background-color: #46AC78;
+        overflow: hidden;
     }
 
     &_order {
@@ -75,25 +79,34 @@
     font-weight: 700;
     color: #3C6550;
 
-    &::before {
-        position: absolute;
-        bottom: 25px;
-        right: 0;
+    mark {
+        display: inline-block;
         width: 15px;
         height: 15px;
-        border-radius: 50%;
-        background-color: #3C6550;
-        content: '';
-    }
+        margin-bottom: 7px;
+        margin-left: 40px;
+        position: relative;
 
-    &::after {
-        position: absolute;
-        bottom: 32px;
-        left: calc(100% + 55px);
-        width: 6000px;
-        height: 1px;
-        background-color: #3C6550;
-        content: '';
+        &::before  {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #3C6550;
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            top: 7px;
+            left: 100%;
+            width: 6000px;
+            height: 1px;
+            background-color: #3C6550;
+            content: '';
+        }
     }
 }
 
@@ -101,6 +114,12 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &_face {
+            &.section_pb {
+                padding-bottom: 110px;
+            }
+        }
 
         &_sostav {
             padding-top: 80px;
@@ -114,6 +133,10 @@
 
     .section__title {
         font-size: 44px;
+
+        mark {
+            margin-bottom: 5px;
+        }
     }
 }
 
@@ -123,7 +146,11 @@
         padding-bottom: 30px;
 
         &_face {
-            background-position: center calc(100% - 130px);
+            background-position: center calc(100% - 30px);
+
+            &.section_pb {
+                padding-bottom: 30px;
+            }
         }
 
         &_courier {
@@ -135,12 +162,8 @@
     .section__title {
         font-size: 38px;
 
-        &::before {
-            bottom: 20px;
-        }
-
-        &::after {
-            bottom: 27px;
+        mark {
+            margin-bottom: 5px;
         }
     }
 }
@@ -148,7 +171,7 @@
 @media (max-width: 480px) {
     .section {
         &_face {
-            background-position: center calc(100% - 30px);
+            background-position: center calc(100% + 30px);
         }
 
         &_courier {
@@ -161,12 +184,8 @@
     .section__title {
         font-size: 30px;
 
-        &::before {
-            bottom: 13px;
-        }
-
-        &::after {
-            bottom: 20px;
+        mark {
+            margin-bottom: 3px;
         }
     }
 }
