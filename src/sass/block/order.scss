@@ -112,3 +112,10 @@
         width: 100%;
     }
 }
+
+@media (max-width: 480px) {
+    .order__btn .btn {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
