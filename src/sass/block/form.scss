@@ -6,9 +6,10 @@
 
 .form__field {
     border: 1px solid #D0D0D0;
-    padding: 19px;
+    padding: 19px 35px;
     background-color: #fff;
     width: calc(100% - 610px);
+    border-radius: 60px;
 
     &_textarea {
         width: 100% !important;
@@ -32,24 +33,7 @@
 }
 
 .form__btn {
-    margin-top: 15px;
-    display: block;
     width: calc(100% - 610px);
-    padding: 20px 53px;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 0.11em;
-    background: linear-gradient(90deg, #56AF94 3.2%, #00AC78 100%);
-    opacity: 0.9;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    border: 0;
-
-    &:hover {
-        opacity: 1;
-    }
 }
 
 .form__info {
