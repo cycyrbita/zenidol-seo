@@ -33,12 +33,16 @@
     }
 
     &_pay {
-        background-image: url("../media/section/pay.jpg");
+        background-image: url("../media/section/order.jpg");
         background-repeat: repeat;
+        background-color: #d4f9e6;
+        overflow: hidden;
     }
 
     &_warning {
-        background-color: #7E983C;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: #3C6550;
     }
 
     &_courier {
